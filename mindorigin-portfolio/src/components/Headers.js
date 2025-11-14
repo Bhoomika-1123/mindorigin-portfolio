@@ -1,26 +1,4 @@
-// import React, { useState, useEffect } from 'react';
 
-// function Headers() {
-//   const [dark, setDark] = useState(false);
-
-//   useEffect(() => {
-//     document.documentElement.classList.toggle('dark', dark);
-//   }, [dark]);
-
-//   return (
-//     <header className="border-b bg-white dark:bg-gray-900 p-4 flex justify-between">
-//       <h1 className="font-bold text-lg dark:text-white">Mindorigin Portfolio</h1>
-//       <button
-//         onClick={() => setDark(!dark)}
-//         className="border px-3 py-1 rounded-lg dark:text-white"
-//       >
-//         {dark ? 'Light' : 'Dark'} Mode
-//       </button>
-//     </header>
-//   );
-// }
-
-// export default Headers;// src/components/Header.js
 import React, { useState, useEffect } from 'react';
 
 function Headers() {
@@ -53,7 +31,9 @@ function Headers() {
         onClick={() => setDark(!dark)}
         className="border px-3 py-1 rounded-lg dark:text-white"
       >
+        {/* //for themee changing we have use it */}
         {dark ? 'Light' : 'Dark'} Mode
+        
       </button>
     </header>
   );
